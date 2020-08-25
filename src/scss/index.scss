@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200;400;600&family=Bitter:wght@200;400;600;700&family=Dosis:wght@200;400;700&display=swap");
+
+@import "_variables.scss";
+@import "menu.scss";
+@import "MainHero.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: $primary;
+  margin: 0;
+  font-family: $default-fnt;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
