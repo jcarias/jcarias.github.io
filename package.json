@@ -17,6 +17,7 @@
     "watch:js": "onchange \"src/js\" -- webpack --mode=development",
     "build:html": "posthtml -c posthtml.json",
     "watch:html": "onchange \"src/views\" -- npm run build:html",
+    "deploy": "rm -rf dist/.git && npm run build && cd dist && git init && git add . && git commit -m \"Initial commit\" && git remote add origin git@github.com:jcarias/jcarias.github.io && git push --force origin master:gh-pages",
     "watch": "run-p serve watch:*",
     "build": "run-p build:*"
   },

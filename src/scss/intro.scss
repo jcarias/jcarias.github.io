@@ -1,0 +1,7 @@
+section.intro {
+  margin-top: 6rem;
+
+  * + p {
+    margin-top: 1em;
+  }
+}

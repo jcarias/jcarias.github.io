@@ -1,0 +1,48 @@
+section.latest-articles {
+  margin-top: 7rem;
+
+  h1 {
+    margin-bottom: 1em;
+  }
+
+  .article-list {
+    display: flex;
+    flex-flow: column;
+
+    .article {
+      margin-bottom: 4em;
+
+      h2 {
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin-bottom: 2rem;
+      }
+
+      a {
+        margin-top: 2em;
+        background-color: $links-clr;
+        color: white;
+        text-decoration: none;
+        font-size: 1.25em;
+        padding: 0.5em 1.5em;
+        font-family: $heading-fnt;
+        border-radius: 100px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    .article-list {
+      flex-flow: row wrap;
+      .article {
+        max-width: 32%;
+      }
+
+      .article + .article {
+        margin-left: 2%;
+      }
+    }
+  }
+}

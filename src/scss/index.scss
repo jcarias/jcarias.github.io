@@ -3,6 +3,8 @@
 @import "_variables.scss";
 @import "menu.scss";
 @import "MainHero.scss";
+@import "intro.scss";
+@import "latest-articles.scss";
 
 *,
 *::before,
@@ -10,8 +12,17 @@
   box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
 body {
-  color: $primary;
+  color: $text-primary-clr;
   margin: 0;
   font-family: $default-fnt;
 }
@@ -19,4 +30,62 @@ body {
 .container {
   max-width: 1024px;
   margin: auto;
+  padding: 0 2em;
+}
+
+.main-heading {
+  font-family: $heading-fnt;
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 1.25em;
+  color: $headings-clr;
+  text-transform: uppercase;
+}
+
+.secondary-heading {
+  font-family: $heading-fnt;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.25em;
+  color: $headings-clr;
+}
+
+.tertiary-heading {
+  font-family: $heading-fnt;
+  font-weight: 300;
+  font-size: 1.75rem;
+  line-height: 1.25em;
+  color: $headings-clr;
+}
+
+.primary-text {
+  font-family: $default-fnt;
+  font-size: 1rem;
+  line-height: 1.25em;
+  color: $text-primary-clr;
+}
+
+.text-link {
+  font-family: $default-fnt;
+  font-size: 1rem;
+  line-height: 1.25em;
+  color: $links-clr;
+  text-decoration: underline;
+}
+
+.article-quote {
+  font-family: $default-fnt;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.25em;
+  color: $text-secondary-clr;
+}
+
+.caption-text {
+  font-family: $heading-fnt;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: $text-secondary-clr;
 }
